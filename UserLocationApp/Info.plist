@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE plist PUBLIC "-//Apple//DTD PLIST 1.0//EN" "http://www.apple.com/DTDs/PropertyList-1.0.dtd">
+<plist version="1.0">
+<dict>
+	<key>NSLocationWhenInUseUsageDescription
+NSLocationWhenInUseUsageDescription
+</key>
+	<string>&quot;Xəritədə mövqeyinizi göstərmək üçün icazə tələb olunur.&quot;</string>
+</dict>
+</plist>

@@ -11,6 +11,7 @@
 		CE8A08362EDA061800AE0867 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A08352EDA061800AE0867 /* ContentView.swift */; };
 		CE8A08382EDA061D00AE0867 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8A08372EDA061D00AE0867 /* Assets.xcassets */; };
 		CE8A083B2EDA061D00AE0867 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = CE8A083A2EDA061D00AE0867 /* Preview Assets.xcassets */; };
+		CE8A08442EDA0C6600AE0867 /* ContentViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = CE8A08432EDA0C6600AE0867 /* ContentViewModel.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -19,6 +20,8 @@
 		CE8A08352EDA061800AE0867 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
 		CE8A08372EDA061D00AE0867 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		CE8A083A2EDA061D00AE0867 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		CE8A08432EDA0C6600AE0867 /* ContentViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentViewModel.swift; sourceTree = "<group>"; };
+		CE8A08452EDA131A00AE0867 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -51,8 +54,10 @@
 		CE8A08322EDA061800AE0867 /* UserLocationApp */ = {
 			isa = PBXGroup;
 			children = (
-				CE8A08332EDA061800AE0867 /* UserLocationAppApp.swift */,
-				CE8A08352EDA061800AE0867 /* ContentView.swift */,
+				CE8A08462EDA143800AE0867 /* App */,
+				CE8A08452EDA131A00AE0867 /* Info.plist */,
+				CE8A08422EDA0C4300AE0867 /* ViewModel */,
+				CE8A08412EDA0C3700AE0867 /* View */,
 				CE8A08372EDA061D00AE0867 /* Assets.xcassets */,
 				CE8A08392EDA061D00AE0867 /* Preview Content */,
 			);
@@ -65,6 +70,30 @@
 				CE8A083A2EDA061D00AE0867 /* Preview Assets.xcassets */,
 			);
 			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		CE8A08412EDA0C3700AE0867 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				CE8A08352EDA061800AE0867 /* ContentView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		CE8A08422EDA0C4300AE0867 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				CE8A08432EDA0C6600AE0867 /* ContentViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		CE8A08462EDA143800AE0867 /* App */ = {
+			isa = PBXGroup;
+			children = (
+				CE8A08332EDA061800AE0867 /* UserLocationAppApp.swift */,
+			);
+			path = App;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -139,6 +168,7 @@
 			files = (
 				CE8A08362EDA061800AE0867 /* ContentView.swift in Sources */,
 				CE8A08342EDA061800AE0867 /* UserLocationAppApp.swift in Sources */,
+				CE8A08442EDA0C6600AE0867 /* ContentViewModel.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -274,6 +304,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"UserLocationApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UserLocationApp/Info.plist;
+				INFOPLIST_KEY_NSLocationUsageDescription = "This app needs your location to show it on the map. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
@@ -302,6 +334,8 @@
 				DEVELOPMENT_ASSET_PATHS = "\"UserLocationApp/Preview Content\"";
 				ENABLE_PREVIEWS = YES;
 				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = UserLocationApp/Info.plist;
+				INFOPLIST_KEY_NSLocationUsageDescription = "This app needs your location to show it on the map. ";
 				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
 				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
